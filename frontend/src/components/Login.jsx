@@ -8,7 +8,7 @@ const Login = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await fetch(`/api/auth/login`, {
+        const res = await fetch(`https://notes-ggh7.onrender.com/api/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

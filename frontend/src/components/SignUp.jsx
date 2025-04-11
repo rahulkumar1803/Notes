@@ -10,7 +10,7 @@ const SignUp = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch(`/api/auth/Createuser`, {
+            const res = await fetch(`https://notes-ggh7.onrender.com/api/auth/Createuser`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
