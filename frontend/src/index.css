@@ -1,0 +1,116 @@
+body{
+    background-color: rgba(87, 186, 248, 0.101);
+    width: 100%;
+}
+.wholeBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navbarStyle{
+    background-color: rgba(191, 208, 243, 0.241);
+    box-shadow: 0 0  8px 0.1px rgb(201, 201, 201);
+}
+.noteBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.addNoteForm{
+    border: 1px solid rgba(215, 212, 212, 0.649);
+    border-radius: 20px;
+    min-width: 400px;
+    padding: 15px;
+    background-color: rgb(247, 241, 230);
+}
+.addNoteBtn{
+    border: 1px solid rgb(236, 173, 56);
+}
+.addNoteBtn:hover{
+    background-color: rgb(225, 187, 131);
+}
+.notesBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 40px 0;
+}
+.notesShown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.yoursNotes{
+    padding: 10px 0;
+    color: rgb(236, 148, 34);
+    text-decoration: underline;
+}
+.notesItem{
+    min-width: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 7px 0.2px rgba(194, 193, 193, 0.63);
+}
+.signup{
+    border: 1px solid rgba(215, 212, 212, 0.649);
+    border-radius: 20px;
+    min-width: 450px;
+    padding: 15px;
+    background-color: rgb(247, 241, 230);
+}
+.signupText{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login{
+    border: 1px solid rgba(215, 212, 212, 0.649);
+    border-radius: 20px;
+    min-width: 450px;
+    padding: 15px;
+    background-color: rgb(247, 241, 230);
+}
+.loginText{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About */
+#about {
+    padding: 0 50px;
+    top: 18rem;
+}
+
+#about h2 {
+    margin: 40px 0 30px;
+    padding-left: 50px;
+}
+
+#about h4 {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 580px) {
+    .wholeBody{
+        flex-direction: column;
+    }
+    .addNoteForm{
+        min-width: 300px;
+    }
+    .notesItem{
+        min-width: 320px;
+    }
+    .signup{
+        min-width: 300px;
+    }
+    .login{
+        min-width: 300px;
+    }
+}
