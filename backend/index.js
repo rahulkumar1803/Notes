@@ -1,9 +1,6 @@
 const connectToMongo = require('./db')
 const express = require('express')
 const cors = require('cors')
-const path = require('path')
-
-__dirname = path.resolve();
 
 connectToMongo();
 const app = express();
@@ -18,7 +15,6 @@ app.use(cors({
     origin: "https://notes-by-rahul.vercel.app",
     credentials: true,
 }));
-
 
 // Available Routes
 app.use('/api/auth', require('./routes/Auth'))
